@@ -28,7 +28,7 @@ log = logging.getLogger("deal_bot")
 
 # ---- Config, edit freely -------------------------------------------------
 KEYWORDS = ["dog", "cat", "pet"]        # the niche; change to whatever you picked
-LOOKBACK_MINUTES = 75                   # covers the gap since the last hourly run, plus buffer
+LOOKBACK_MINUTES = 1440                   # covers the gap since the last hourly run, plus buffer
 SLICKDEALS_RSS = "https://slickdeals.net/newsearch.php"
 
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
